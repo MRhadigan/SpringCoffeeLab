@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Form Data</title>
+<title>Form Data2</title>
 
 <link href="css/style.css" rel="stylesheet">
 
@@ -12,7 +12,12 @@
 <body style="background-color:tan;">
 <font color="blue">
 
-	<h1>Hello ${personName }!</h1>
+	<h1>Hello ${member}!</h1>
+	<br>
+	<h1>Here's the email ${member2}</h1>
+	<br>
+	
+	
 </font>
 </body>
 </html>

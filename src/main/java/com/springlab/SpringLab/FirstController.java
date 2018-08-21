@@ -20,9 +20,25 @@ public class FirstController {
 	
 	
 	@RequestMapping("userinfo")
-	public ModelAndView formData(@RequestParam("firstName") String fName) {
-		return new ModelAndView("formstuff", "personName", fName);
+	public ModelAndView formData(@RequestParam("firstName") String fName,  
+			
+		@RequestParam("lastName") String lName,
+		@RequestParam("phoneNum") String phone) {
+		
+		return new ModelAndView("formstuff", "member" , fName + " " + lName);
 	
 	}
+		
+	@RequestMapping("userinfo2")
+	public ModelAndView formData2(@RequestParam("emailName") String email,
+		
+		@RequestParam("userPhone") String phone,
+		@RequestParam("userName") String uName,
+		@RequestParam("passName") String pName) {
+	
+		return new ModelAndView("formstuff", "member" , email);
+		
+	}
+	
 	
 }

@@ -8,22 +8,13 @@
 </head>
 <body style="background-color:tan;">
 <font color="blue">
-<h1> Matthew's Coffee Shop!</h1>
+<h1> Welcome to</h1>
+<h1>Matthew's Coffee Shop!</h1>
 
 Would you like to enter our store?
 
 <a href="/coffee">Enter</a>
 </font>
-	<!--  <form action="username">
-		First Name: <input type="text" name="firstName">
-		<input type="submit" value="Submit">
-	
-	</form>-->
-
-
-<!-- <a href="/coffee">enter</a>-->
-
-	
 	
 	
 	

@@ -1,49 +1,52 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body style="background-color:powderblue;">
-<font color="darkblue">
+<body style="background-color: gray;">
+	
 
-<h3>Please fill the form to register!</h3>
-</font>
-<form action="userinfo">
-	<font color="green">
-		First Name: <input type="text" name="firstName">
-		</font>
-		<br>
-		<font color="blue">
-		Last Name: <input type="text" name="firstName">
-		</font>
-		<br>
+		<h4 style="color:blue">Please fill the form to register!</h4>
+
+
+	<form action="userinfo" onsubmit="return validateInfo();">
+		<font color="green"> First Name: <input id="firstname"
+			type="text" name="firstName">
+		</font> <br> <font color="blue"> Last Name: <input id="lastname"
+			type="text" name="lastName">
+		</font> <br>
+
+
+		<!--  <form action="userinfo2"> -->
 		<font color="purple">
-		Email: <input type="text" name="personName">
+		Email: <input id="text" name="emailName">
 		</font>
-		<br>
-		<font color="red">
-		Phone Number: <input type="text" name="personName">
-		</font>
-		<br>
+	 	<br>
+	
 		<font color="orange">
-		Username: <input type="text" name="personName">
+		Username: <input type="text" name="userName">
 		</font>
 		<br> 
 		<font color="yellow">
-		Password: <input type="text" name="personName">
+		Password: <input type="password" name="passName">
+		</font>
+		<br> 
+		<font color="red">  
+		Phone Number: <input type="tel" id="phone" name="lastname"
+			placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+			required /> 
 		</font>
 		<br>
-		<input type="submit" value="Register">
-	
+			<input type="submit" value="Register">
+		
 	</form>
 
-<!--<form action="/coffee">-->
+	<script src="js/script.js">
 		
-<!--<input type = "submit" value = "Enter">-->
-
+	</script>
 
 </body>
 </html>
