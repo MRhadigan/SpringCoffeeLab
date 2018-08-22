@@ -32,8 +32,8 @@ Username: <input type="text" name="title">
 		</font>
 		<br><br><br> 
 		<font color="orange">
-		<!--   Password: <input type="password" name="passName">
-Password: <input type="password" name="passName"> -->	
+		<!-- Password: <input type="password" name="passName">-->
+Password: <input type="password" name="passName"> 	
 		</font>
 		<br><br><br> 
 		<font color="red">  

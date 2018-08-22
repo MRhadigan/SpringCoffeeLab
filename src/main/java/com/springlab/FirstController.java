@@ -31,16 +31,16 @@ public class FirstController {
 	
 	
 	@RequestMapping("userinfo")
-	public ModelAndView formData(@RequestParam("firstName") String fName,  
+	public ModelAndView formData(@RequestParam("firstName") String id,  
 			
-		@RequestParam("lastName") String lName,
-		@RequestParam("emailName") String email,
+		@RequestParam("lastName") String contName,
+		@RequestParam("emailName") String compName,
+		@RequestParam("userName") String title,
 		@RequestParam("userPhone") String phone,
-		@RequestParam("userName") String uName,
-		@RequestParam("passName") String pName) {
+		@RequestParam("passName") String passName) {
 	
 		//@RequestParam("phoneNum") String phone
-		return new ModelAndView("formstuff", "member" , fName + " " + lName);
+		return new ModelAndView("formstuff", "member" , id + " " + contName);
 	
 	}
 	

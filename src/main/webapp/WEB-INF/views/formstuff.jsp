@@ -18,11 +18,12 @@
 	
 	
 	<form action="addnewcust">
-Customer ID: <input type="text" name="id"> <br>
-Your Name: <input type="text" name="contName"> <br>
-Company Name: <input type="text" name="compName"> <br>
-Your Title: <input type="text" name="title"> <br>
-Company Phone: <input type="text" name="phone"> <br>
+First Name: <input type="text" name="id"> <br>
+Last Name: <input type="text" name="contName"> <br>
+Email: <input type="text" name="compName"> <br>
+Username: <input type="text" name="title"> <br>
+<!--  Password: <input type="text" name="passName"> <br>-->
+Phone: <input type="text" name="phone"> <br>
 <input type="submit" value="Add"> <br>
 </form>
 	
