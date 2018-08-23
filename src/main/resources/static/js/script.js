@@ -1,8 +1,8 @@
 
 function validateInfo() {
 
-	var fname = document.getElementById("firstname").value;
-	var lname = document.getElementById("lastname").value;
+	var id = document.getElementById("firstname").value;
+	var contName = document.getElementById("lastname").value;
 	
 	
 

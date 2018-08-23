@@ -20,7 +20,6 @@ First Name: <input type="text" name="id"> <br>
 		<!-- Last Name: <input id="lastname" type="text" name="lastName"> -->
 Last Name: <input type="text" name="contName"> <br>
 		</font> <br><br>
-		 <form action="userinfo2">
 		<font color="green">
 		<!--  Email: <input id="text" name="emailName"> -->
 Email: <input type="text" name="compName"> <br>
@@ -44,13 +43,9 @@ Phone Number: <input type="text" name="phone"
 		</font>
 		<br><br><br><br>
 			<input type="submit" value="Register">
-		
 	</form> 
-	
-
-
-	<script src="js/script.js">
 </center>
+	<script src="js/script.js">
 		
 	</script>
 

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -43,7 +43,36 @@
 <font color="yellow">Would you like to Register for discounts?</font>
 
 <a href="/coffee">Register</a>
+<br><br><br>
+
+ <form action="addnewcust">
+Order Number: <input type="text" name="itemID"> <br>
+Name: <input type="text" name="Name"> <br>
+Description: <input type="text" name="id"> <br>
+Quantity: <input type="text" name="id"> <br>
+Price: <input type="text" name="id"> <br>
+</form>
+
+<table border="1">
+	<c:forEach var="item" items="${items}">
+		<tr>
+			<td>${item.itemID}</td>
+			<td>${item.Name}</td>
+			<td>${item.description}</td>
+			<td>${item.quantity}</td>
+			<td>${item.price}</td>
+			<td><a href="update?id=${item.Name}">Update</a></td>
+			<td><a href="delete?id=${item.Name}">Delete</a></td>
+					
+		</tr>
+	
+	</c:forEach>
+
+</table>
 <br><br><br><br><br><br>
+
+
+
 
 </center>
 	

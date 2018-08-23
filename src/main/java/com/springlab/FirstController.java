@@ -28,30 +28,16 @@ public class FirstController {
 	public String coffee() {
 		return "coffee"; 
 	}
-	
-	
-	@RequestMapping("userinfo")
-	public ModelAndView formData(@RequestParam("firstName") String id,  
-			
-		@RequestParam("lastName") String contName,
-		@RequestParam("emailName") String compName,
-		@RequestParam("userName") String title,
-		@RequestParam("userPhone") String phone,
-		@RequestParam("passName") String passName) {
-	
-		//@RequestParam("phoneNum") String phone
-		return new ModelAndView("formstuff", "member" , id + " " + contName);
-	
-	}
+
 	
 	@RequestMapping("/addnewcust")
-	public ModelAndView addNew(@RequestParam("id") String id, @RequestParam("contName") String name,
-			@RequestParam("title") String title, @RequestParam("compName") String compName,
+	public ModelAndView addNew(@RequestParam("id") String id, @RequestParam("contName") String contName,
+			@RequestParam("compName") String compName, @RequestParam("title") String title, @RequestParam("passName") String passName,
 			@RequestParam("phone") String phone) {
 
-		dao.insertCustomer(id, compName, name, title, phone);
+		dao.insertCustomer(id, contName, compName, title, passName, phone);
 
-		return new ModelAndView("index", "customers", dao.findAll());
+		return new ModelAndView("formstuff", "users", dao.findAll());
 	}
 
 
@@ -79,17 +65,5 @@ public class FirstController {
 		return new ModelAndView("index", "customers", dao.findAll());
 	}
 		
-//	@RequestMapping("userinfo2")
-//	public ModelAndView formData2
-//		
-//		(@RequestParam("emailName") String email,
-//		@RequestParam("userPhone") String phone,
-//		@RequestParam("userName") String uName,
-//		@RequestParam("passName") String pName) {
-//	
-//		return new ModelAndView("formstuff", "member" , email);
-//		
-//}
-	
 	
 }

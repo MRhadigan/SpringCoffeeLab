@@ -17,13 +17,13 @@ import com.springlab.entity.Customers;
 		JdbcTemplate jdbcTemplate;
 		
 		public List<Customers> findAll(){
-			return jdbcTemplate.query("select * from customers", new BeanPropertyRowMapper<Customers>(Customers.class));
+			return jdbcTemplate.query("select * from users", new BeanPropertyRowMapper<Customers>(Customers.class));
 		}
 		
-		public int insertCustomer(String id, String compName, String contName, String contTitle, String phone) {
-			String insertQuery = "INSERT INTO customers(companyName, ContactTitle, ContactName, CustomerID, phone)"
-					+ " values(?,?,?,?,?)";
-			return jdbcTemplate.update(insertQuery, compName, contTitle, contName, id, phone);
+		public int insertCustomer(String id, String compName, String contName, String contTitle, String passName, String phone) {
+			String insertQuery = "INSERT INTO users(firstName, lastName, emailName, userName, passName, phone)"
+					+ " values(?,?,?,?,?,?)";
+			return jdbcTemplate.update(insertQuery, id, compName, contName, contTitle, passName, phone);
 			
 		}
 		
